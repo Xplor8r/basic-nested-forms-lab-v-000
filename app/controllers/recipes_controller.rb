@@ -12,7 +12,8 @@ end
 
 def new
   @recipe = Recipe.new
-
+  @recipe.ingredients.create
+  @recipe.ingredients.create
 end
 
 def create
