@@ -2,9 +2,11 @@
   Title: <%= f.text_field :title %>
 
   <%= f.fields_for :ingredients do |ing| %>
-    <%= ing.label :ingredient %>
-    <%= ing.text_field :ingredient %>
+    <%= ing.label :name %>
+    <%= ing.text_field :name %>
+    <%= ing.label :quantity %>
+    <%= ing.text_field :quantity %>
   <% end %>
 
-  <%= f.submit name="commit" %>
+  <%= f.submit %>
 <% end %>
